@@ -51,6 +51,6 @@ app.post('/', (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
-app.listen(3001, () => {
+app.listen(0.0.0.0 || 3001, () => {
   console.log('Server is running');
 });
